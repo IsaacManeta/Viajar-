@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.topo {
+    width: 100%;
+    height: 15vh;
+    background-color: #062B45;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.decoracao {
+    text-decoration: none;
+    color: white;
+}
+.config {
+    display: flex;
+    gap: 80px;
+}
+.config ul {
+    display: flex;
+    gap: 50px;
+}
+.config ul li {
+    list-style: none;
+}
+.casa {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15vh;
+    background-image: url(IMG/Banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-margin-top: 15vh;
+}
+.sobre {
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMG/Textura2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+.sobre h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.conteudo-sobre {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 150px;
+}
+.bloco {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloco h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.caixa,
+.caixa2 {
+    width: 50%;
+    height: 50vh;
+    background-color: #ddd;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    overflow: hidden;
+}
+.viagem {
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMG/Textura\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.viagem h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.carrossel {
+    width: 900px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
+.imagem {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.esquerda {
+
+    width: 220px;
+    height: 140px;
+    left: 0;
+    top: 55px;
+    transform: scale(0.8);
+    opacity: 0.9;
+    z-index: 2;
+}
+.centro {
+    width: 280px;
+    height: 190px;
+    left: 310px;
+    top: 20px;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 5;
+}
+
+.direita {
+    width: 220px;
+    height: 140px;
+    left: 680px;
+    top: 55px;
+    transform: scale(0.8);
+    opacity: 0.9;
+    z-index: 2;
+}
+.escondida {
+    width: 180px;
+    height: 120px;
+    left: 350px;
+    top: 70px;
+    transform: scale(0.5);
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.viagem h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.produtos {
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMG/Produtos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 15vh;
+}
+.produtos h1 {
+    color: white;
+    font-size: 45px;
+}
+.caixa p,
+.caixa2 p {
+    width: 100%;
+    margin: 0;
+    color: #062B45;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.rodape {
+    width: 100%;
+    min-height: 130px;
+    background-color: #062B45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 4%;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.grupo-rodape {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    font-size: 13px;
+}
+
+.coluna-rodape {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.coluna-rodape h3 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B8C7D1;
+    font-size: 13px;
+}
+
+.coluna-rodape p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    min-height: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #B8C7D1;
+    outline: none;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+.coluna-rodape p:focus {
+    border-bottom: 1px solid #00D6CF;
+}
+
+.logo-rodape {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rodape img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
