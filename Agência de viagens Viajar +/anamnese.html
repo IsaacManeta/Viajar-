@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anamnese.css">
+    <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <title>Area do aluno</title>
+</head>
+<body>
+    <header class="topo">
+        <div>
+            <img src="IMG/Logo2.png"alt="Logo Viajar+"width="300">
+        </div>
+        <nav class="config">
+            <ul>
+                <li><a class="decoracao" href="area.html">ÁREA DO ALUNO</a></li>
+                <li><a class="decoracao" href="index.html#HOME">HOME</a></li>
+                <li><a class="decoracao" href="index.html#SOBRE NÓS">SOBRE NÓS</a></li>
+                <li><a class="decoracao" href="index.html#VIAGENS">VIAGENS</a></li>
+                <li><a class="decoracao" href="index.html#PRODUTOS">PRODUTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pagina-anamnese">
+            <form class="formulario">
+                <h1>Anamnese!</h1>
+
+            <h2>Dados do passageiro</h2>
+            <label for="nome">Nome completo do passageiro:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+
+            <label for="cpf">CPF do passageiro:</label>
+            <input type="text" id="cpf" name="cpf">
+
+            <label for="responsavel">Nome completo do responsável:</label>
+            <input type="text" id="responsavel" name="responsavel">
+
+            <label for="nascimento-responsavel">Data de nascimento do responsável:</label>
+            <input type="date" id="nascimento-responsavel" name="nascimento-responsavel">
+
+            <label for="cpf-responsavel">CPF do responsável:</label>
+            <input type="text" id="cpf-responsavel" name="cpf-responsavel">
+            <h2>Anamnese médica</h2>
+            <label for="sangue">Tipo sanguíneo:</label>
+            <input type="text" id="sangue" name="sangue">
+            <label for="fator">Preferência de algum medicamento?</label>
+            <input type="text" id="fator" name="fator">
+            <label for="alergias">Alergias?</label>
+            <textarea id="alergias" name="alergias"></textarea>
+            <label for="doencas">Possui alguma doença crônica?</label>
+            <textarea id="doencas" name="doencas"></textarea>
+
+            <label for="remedios">Medicamentos Diários?</label>
+            <textarea id="remedios" name="remedios"></textarea>
+
+            <label for="restricoes">Possui alguma restrição alimentar?</label>
+            <textarea id="restricoes" name="restricoes"></textarea>
+
+            <label for="acompanhamento">Tem acompanhamento médico?</label>
+            <textarea id="acompanhamento" name="acompanhamento"></textarea>
+
+            <label for="informacoes">Tem algo que devemos saber?</label>
+            <textarea id="informacoes" name="informacoes"></textarea>
+            <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
